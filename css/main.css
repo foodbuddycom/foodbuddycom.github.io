@@ -1,0 +1,540 @@
+/* -------------------------------------------------------
+                     General 
+-------------------------------------------------------- */
+
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	text-decoration: none !important;
+	list-style: none !important;
+	outline: none !important;
+}
+
+body{
+	font-weight: 400;
+	overflow-x: hidden;
+}
+.lock{
+    overflow: hidden;
+}
+img{
+	width: 100%;
+	height: auto;
+}
+
+/* ---------------- Typography -----------------*/
+
+h1,h2,h3
+{
+	font-weight: 700;
+}
+
+h1{
+	font-size: 70px;
+}
+
+h2{
+	font-size: 50px;
+}
+
+h3{
+	font-size: 35px;
+}
+
+h4{
+	font-size: 30px;
+}
+
+h5{
+	font-size: 25px;
+}
+
+h6{
+	font-size: 18px;
+}
+
+p{
+	line-height: 1.8;
+	margin: 0;
+  font-size: 16px;
+}
+
+span{
+  display: inline-block;
+}
+
+/* ---------------- vertical middle align -----------------*/
+
+.v-middle {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+}
+
+/* ---------------- Utility Classes -----------------*/
+
+.clear-fix{
+	clear: both;
+}
+
+/* margin top */
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.mt-60 {
+    margin-top: 60px;
+}
+
+.mt-80 {
+    margin-top: 80px;
+}
+
+.mt-100 {
+    margin-top: 100px;
+}
+
+/*  margin bottom */
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.mb-80 {
+    margin-bottom: 80px;
+}
+
+
+/* margin right and left */
+
+.mrl-10 {
+    margin: 0 10px;
+}
+
+.mrl-20 {
+    margin: 0 20px;
+}
+
+.mrl-30 {
+    margin: 0 30px;
+}
+
+.mrl-40 {
+    margin: 0 40px;
+}
+
+.mrl-50 {
+    margin: 0 50px;
+}
+
+/* custom padding classes */
+
+.no-padding {
+    padding: 0!important;
+}
+
+/* padding-bottom */
+
+.pb-10 {
+    padding-bottom: 10px;
+}
+
+.pb-20 {
+    padding-bottom: 20px;
+}
+
+.pb-30 {
+    padding-bottom: 30px;
+}
+
+.pb-50 {
+    padding-bottom: 50px;
+}
+
+.pb-80 {
+    padding-bottom: 80px;
+}
+
+.pb-100 {
+    padding-bottom: 100px;
+}
+
+/* padding top */
+
+.pt-10 {
+    padding-top: 10px;
+}
+
+.pt-20 {
+    padding-top: 20px;
+}
+
+.pt-30 {
+    padding-top: 30px;
+}
+
+.pt-40 {
+    padding-top: 40px;
+}
+
+.pt-60 {
+    padding-top: 60px;
+}
+
+.pt-80 {
+    padding-top: 80px;
+}
+
+.pt-100 {
+    padding-top: 100px;
+}
+
+/* padding top bottom */
+
+.ptb-10 {
+    padding: 10px 0;
+}
+
+.ptb-20 {
+    padding: 20px 0;
+}
+
+.ptb-30 {
+    padding: 30px 0;
+}
+
+.ptb-50 {
+    padding: 50px 0;
+}
+
+/* padding right and left */
+
+.prl-10 {
+    padding: 0 10px;
+}
+
+.prl-20 {
+    padding: 0 20px;
+}
+
+.prl-30 {
+    padding: 0 30px;
+}
+
+.prl-40 {
+    padding: 0 40px;
+}
+
+.prl-50 {
+    padding: 0 50px;
+}
+
+/* Social Media */
+
+.facebook{
+	background-color: #3b5998
+}
+
+.twitter{
+	background-color: #0084b4
+}
+
+.youtube{
+	background-color: #bb0000
+}
+
+.linkedin{
+	background-color: #007bb6
+}
+
+.google{
+	background-color: #dd4b39
+}
+
+.instagram{
+	background-color: #e95950
+}
+
+.whatsapp{
+	background-color: #4dc247
+}
+
+.github{
+	background-color: #000000
+}
+
+/* -------------------------------------------------------
+                     Preloader
+-------------------------------------------------------- */
+
+.loading{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #000;
+	z-index: 999999;
+}
+
+.spinner {
+  margin: 50vh auto;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.spinner > div {
+  background-color: #fff;
+  height: 100%;
+  width: 4px;
+  display: inline-block;
+  
+  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+/* -------------------------------------------------------
+                     Popup Styles Start
+-------------------------------------------------------- */
+
+
+.popup {
+
+}
+.popup-end {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(51, 51, 51, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.6s 0s ease;
+    z-index: 999;
+
+}
+.popup-end._hidden{
+    opacity: 0;
+    touch-action: none;
+    visibility: hidden;
+}
+.popup-end._open{
+    height: 100%;
+    background-color: rgb(51, 51, 51, 0.7);
+    overflow: auto ;
+    opacity: 1;
+    touch-action: auto;
+    visibility: visible;
+
+}
+
+.popup-end__wrapper {
+    position: absolute;
+    display: flex;
+    max-width: 720px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.9s ;
+    background: #fff;
+    transform: translateY(100px) scale(0.4);
+    transition: all 1s ease 0s;
+
+}
+
+.popup-end__left {
+    padding: 60px 30px 20px;
+    background: #fff;
+    flex: 1.5;
+    transition: opacity 1.2s 0s ease,
+    transform 0.5s 0s ease;
+    transform: translateY(80px);
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+.popup-end__title {
+    font-size: 26px;
+    margin: 0;
+    font-weight: 400;
+    color: #000;
+}
+.popup-end__title:not(:last-child){
+    margin-bottom: 0.8em;
+}
+.popup-end__text:not(:last-child) {
+    flex: 1 1 auto;
+}
+
+.popup-end__text:not(:last-child){
+    margin-bottom: 0.8em;
+}
+.popup-end__right {
+    position: relative;
+    flex: 2;
+    font-size: 0;
+    transition: 0.3s;
+    overflow: hidden;
+    padding: 0px 0px 50% 0px;
+}
+.popup-end__right img{
+    transform: scale(2);
+    transition: all 0.5s ease 0s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    object-fit: cover;
+    object-position: 70% 50%;
+}
+.icon-button {
+    outline: 0;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    width: 32px;
+    height: 32px;
+    border: 0;
+    background: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.popup-end__button {
+
+    color: darken(#8c7569, 5%);
+    font-size: 18px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    padding: 10px 40px;
+    border-radius: 30px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.16);
+    transition: 0.3s;
+}
+.popup-end__button:hover{
+    border-color: rgba(255, 255, 255, 0.2);
+    background: rgba(#fff, 0.8);
+}
+
+.popup-end._open .popup-end__button{
+    opacity: 0;
+}
+.popup-end._open .popup-end__wrapper{
+    opacity: 1;
+    transition-duration: 0.6s;
+    pointer-events: auto;
+    transform: translateY(0) scale(1);
+
+}
+.popup-end._open .popup-end__right img{
+    transform: scale(1);
+}
+
+.popup-end._open .popup-end__left{
+    transform: translateY(0);
+    opacity: 1;
+    transition-delay: 0.1s;
+}
+
+@media (max-width: 992.98px){
+    .popup-end__wrapper{
+        width: 100%;
+        max-width: 100%;
+        min-height: 100%;
+        flex-direction: column;
+        overflow: auto;
+    }
+    .popup-end._open{
+        padding: 0px 0px 0px 0px;
+        display: block;
+
+    }
+}
+@media (max-width: 467.98px){
+    .popup-end__right img{
+        object-position: 66% 50%;
+    }
+}
+
+/* -------------------------------------------------------
+                     Popup Styles End
+-------------------------------------------------------- */
+
+
+@-webkit-keyframes sk-stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+  20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes sk-stretchdelay {
+  0%, 40%, 100% { 
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% { 
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
